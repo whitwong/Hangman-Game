@@ -14,6 +14,7 @@ function setup() {
 
   //Declare array for user guesses 
   var guessChoiceArr = [];
+  document.getElementById("user-choice").innerHTML = guessChoiceArr;
 
   //Write current status of wins, losses, and guesses remaining
   document.getElementById("win").innerHTML = wins;
