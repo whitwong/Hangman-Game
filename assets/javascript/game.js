@@ -12,7 +12,7 @@ function setup() {
   //Declare global variables for the player guesses remaining
   var guessLeft = 10;
 
-  //Declare array for user guesses 
+  //Declare array for user guesses and write to document
   var guessChoiceArr = [];
   document.getElementById("user-choice").innerHTML = guessChoiceArr;
 
@@ -21,7 +21,7 @@ function setup() {
   document.getElementById("lose").innerHTML = losses;
   document.getElementById("remain").innerHTML = guessLeft;
 
-  //Create blank spaces for the number of letters in the word
+  //Create blank spaces for the number of letters in the word and write to document
   var underscore = wordSelect.replace(/[a-z]/g, "_");
   document.getElementById("blanks").innerHTML = underscore;
 
@@ -37,7 +37,6 @@ function setup() {
 
     //Checks that the user choice is a letter from a-z
     if (availableKeys.indexOf(select) > -1){
-      //if (guessLeft > 0){
         //If letter is in the word, then show it
         if (wordSelect.includes(select)) {
           var letterInd = [];
@@ -56,7 +55,6 @@ function setup() {
           guessChoiceArr.push(select);
           guessLeft--;      
         }
-
     //Increment wins if user guess the word and end the game
     if (underscore === wordSelect){
       wins++;
