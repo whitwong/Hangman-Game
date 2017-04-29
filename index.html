@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Avatar Hangman</title>
+    <!--Linking Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+  
+  </head>
+  <body>
+    <section class="mainSection container">
+      <div class="row title">
+          <h1>Hangman: Avatar Edition</h1>
+        <div class="col-md-6 guess">
+          <h2>Press any letter to start the game!</h2>
+          <div id="blanks"></div>
+          <p>Your guesses: <span id="user-choice"></span></p>
+        </div>
+
+        <div class="col-md-4 guess sidebar">
+          <h2>Score</h2>
+          <div>Wins: <span id="win"></span></div>
+          <div>Losses: <span id="lose"></span></div>
+          <div>Guesses Remaining: <span id="remain"></span></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--Moved script tags here to access span items-->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+  </body>
+</html>

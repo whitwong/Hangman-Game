@@ -1,0 +1,40 @@
+body {
+	margin: 0 auto;
+	background-image: url(../images/coolPose2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family:'Merienda One', Papyrus, cursive;;
+}
+
+h1 {
+	font-size: 4.5em;
+}
+
+#blanks, #user-choice {
+	letter-spacing: 5px;
+}
+
+.row {
+	color: white;
+	text-align: center;
+}
+
+.guess {
+	background: rgba(265,265,265, 0.2);
+	text-align: center;
+	margin: 80px 5px 0px;
+}
+
+.sidebar {
+	margin-left: 150px;
+}
+
+p, .guess div {
+	font-size: 1.2em;
+}
+
+@media screen and (max-width: 1200px) {
+	.sidebar {
+		margin-left: 0px;
+	}
+}
