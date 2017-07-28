@@ -1,7 +1,7 @@
 # Hangman-Game
 Created a Hangman game with an _Avatar: The Last Airbender_ theme. JavaScript was used to handle the logic of randomly selecting a word, replacing blanks with correct letters, wins / loses, and tracking the number of guesses remaining.
 
-**Technology used:** JavaScript, HTML, and CSS.
+**Technology used:** Bootstrap, JavaScript, HTML, and CSS.
 
 ### Rules of the Game
 1. Guess the selected word within 10 guesses.
